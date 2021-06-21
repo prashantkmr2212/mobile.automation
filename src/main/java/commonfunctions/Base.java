@@ -23,6 +23,8 @@ public class Base {
     public static AndroidDriver driver;
     private static String basePath=System.getProperty("user.dir");
     private static String pathofEnvironmentFile=basePath+"\\src\\test\\resources\\testconfig\\Environment.properties";
+    private static String pathOfApkFile=basePath+"\\src\\test\\resources\\apk\\base.apk";
+
 
     public WebDriver initialize(String deviceName, String platformName, String platformVersion) throws Exception
     {
@@ -36,13 +38,14 @@ public class Base {
         String fullReset=Utility.readPropertyFile(pathofEnvironmentFile,"fullReset");
 
 
+
         DesiredCapabilities capabilities=new DesiredCapabilities();
         capabilities.setCapability("deviceName",deviceName);
         capabilities.setCapability("platformName",platformName);
         capabilities.setCapability("platformVersion",platformVersion);
         capabilities.setCapability("automationName", "UiAutomator2");
         capabilities.setCapability("app",appLocation);
-        capabilities.setCapability("appPackage",appPackage);
+        capabilities.setCapability("appPackage",pathOfApkFile);
         capabilities.setCapability("appActivity",appActivity);
         capabilities.setCapability("appWaitActivity",appWaitActivity);
         capabilities.setCapability("noReset", noReset);
