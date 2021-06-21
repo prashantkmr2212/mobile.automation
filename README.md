@@ -1,4 +1,4 @@
-# mobile.automation #ebay #android
+# mobile.automation.ebay.android
 ## Appium
 
 Appium is an open-source, cross-platform test automation tool for native,
@@ -25,12 +25,23 @@ Windows/MAC machine
 Check out [Getting Started](/docs/en/about-appium/getting-started.md) guide
 
 ### Installation 
--IDE-Intellij/Eclipse
--Install Java and Maven
+-IDE-Intellij/Eclipse.
+
+-Install Java and Maven.
+
 -Android Emulator/ Physical Device
+
 -ADB
--Appium Desktop client
+
+-Appium Desktop 
 
 ### How to execute 
--Verify if device is connected via adb devices command.
--Test can be executed via the runner file inside src/test/java/runner package
+-Start Appium Desktop server
+
+-Verify if device is connected via below command-
+
+```
+adb devices
+```
+
+-Execute the test runner file inside src/test/java/runner package
