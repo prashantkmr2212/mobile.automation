@@ -25,12 +25,12 @@ Windows/MAC machine
 Check out [Getting Started](/docs/en/about-appium/getting-started.md) guide
 
 ### Installation 
-Intellij/Eclipse
-Install Java and Maven
-Android Emulator/ Physical Device
-ADB
-Appium Desktop client
+1.Intellij/Eclipse
+2.Install Java and Maven
+3.Android Emulator/ Physical Device
+4.ADB
+5.Appium Desktop client
 
 ### How to execute 
-Verify if device is connected via adb devices command.
-Test can be executed via the runner file inside src/test/java/runner package
+1.Verify if device is connected via adb devices command.
+2.Test can be executed via the runner file inside src/test/java/runner package
